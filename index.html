@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Alex Simion">
+    <meta name="keywords" content="cinema,filme,bucuresti">
+    <meta name="description" content="Cinema Bucuresti">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+
+<body>
+
+    <nav>
+        <i class="fas fa-bars desktop-hidden burger" onclick="burgerMenu()"></i>
+        <h1 class="logo">Logo</h1>
+        <ul class="mobile-hidden">
+            <li><a href="program.html">Program</a></li>
+            <li><a href="">Filme</a></li>
+            <li><a href="">Spectacole</a></li>
+            <li><a href="">Promotii</a></li>
+            <li><a href="">Evenimente Private</a></li>
+        </ul>
+    </nav>
+
+    <ul class="mobile-menu">
+        <span class="close-button" onclick="closeBurgerMenu()">X</span>
+        <a href="program.html">
+            <li>Program</li>
+        </a>
+        <a href="">
+            <li>Filme</li>
+        </a>
+        <a href="">
+            <li>Spectacole</li>
+        </a>
+        <a href="">
+            <li>Promotii</li>
+        </a>
+        <a href="">
+            <li>Evenimente Private</li>
+        </a>
+    </ul>
+
+    <section class="slider">
+        <div class="slide" id="slide-1">
+            <img src="http://fr.web.img6.acsta.net/pictures/18/05/15/16/26/2028013.jpg" alt="film-img">
+            <aside>
+                <h1>Bohemian Rhaspsody</h1>
+                <button>Vezi Trailer</button>
+                <p class="mobile-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ea repellendus
+                    repudiandae porro
+                    maxime illo cupiditate soluta beatae ab deleniti?</p>
+            </aside>
+        </div>
+        <div class="slide" id="slide-2">
+            <img src="http://barlad.cityplex.ro/files/elliot-RO-pr.jpg" alt="film-img">
+            <aside>
+                <h1>Elliot: O poveste de craciun</h1>
+                <button>Vezi Trailer</button>
+                <p class="mobile-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ea repellendus
+                    repudiandae porro
+                    maxime illo cupiditate soluta beatae ab deleniti?</p>
+            </aside>
+        </div>
+        <div class="slide" id="slide-3">
+            <img src="https://static.cinemagia.ro/img/resize/db/movie/20/68/703/coboram-la-prima-143039l-600x0-w-c7b03efa.jpg"
+                alt="film-img">
+            <aside>
+                <h1>Coboram la prima</h1>
+                <button>Vezi Trailer</button>
+                <p class="mobile-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ea repellendus
+                    repudiandae porro
+                    maxime illo cupiditate soluta beatae ab deleniti?</p>
+            </aside>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="showSlides(1)"></span>
+            <span class="dot" onclick="showSlides(2)"></span>
+            <span class="dot" onclick="showSlides(3)"></span>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <section class="movies">
+        <h1 class="movie-list-title">Cele mai recente filme</h1>
+        <hr>
+        <section class="movie-list">
+            <article class="movie">
+                <img src="https://i.pinimg.com/originals/f1/b7/6b/f1b76bea3e4674119e4f6b28dbf6a6ec.jpg" alt="">
+                <h2 class="movie-title">Venom</h2>
+                <button>Trailer</button>
+                <button>Bilete</button>
+                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+            </article>
+            <article class="movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51fkIu-dMBL._SS500.jpg" alt="">
+                <h2 class="movie-title">Bohemian Rhapsody</h2>
+                <button>Trailer</button>
+                <button>Bilete</button>
+                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+            </article>
+            <article class="movie">
+                <img src="https://www.desktopbackground.org/p/2013/09/05/634107_pirates-of-the-caribbean-on-stranger-tides_500x500_h.jpg"
+                    alt="">
+                <h2 class="movie-title">Piratii din Caraibe</h2>
+                <button>Trailer</button>
+                <button>Bilete</button>
+                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+            </article>
+            <article class="movie">
+                <img src="https://cdn.fanatik.ro/wp-content/uploads/media/421/2661/33415/14518588/1/ha2_lalaland.jpg"
+                    alt="">
+                <h2 class="movie-title">Singur Acasa 2</h2>
+                <button>Trailer</button>
+                <button>Bilete</button>
+                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+            </article>
+            <article class="movie">
+                <img src="http://photos.prnewswire.com/prn/20120327/LA77015?max=950" alt="">
+                <h2 class="movie-title">Razbunatorii</h2>
+                <button>Trailer</button>
+                <button>Bilete</button>
+                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+            </article>
+            <article class="movie">
+                <img src="https://images.store.hmv.com/app_/responsive/HMVStore/media/product/296783/01-296783.jpg?w=500"
+                    alt="">
+                <h2 class="movie-title">Deadpool</h2>
+                <button>Trailer</button>
+                <button>Bilete</button>
+                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+            </article>
+        </section>
+        <button>Mai Multe</button>
+    </section>
+
+    <footer>
+        <section>
+            <h4>Cinema City</h4>
+            <ul>
+                <li>Privacy policy</li>
+                <li>Terms and Conditions</li>
+                <li>Cookies Policy</li>
+            </ul>
+        </section>
+        <section>
+            <h4>Social Media</h4>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>MySpace</li>
+                <li>Hi5</li>
+            </ul>
+        </section>
+        <section>
+            <h4>Contact</h4>
+            <ul>
+                <li>+40725903449 - Adrian Eustache</li>
+                <li>Strada Porumbului, nr 42</li>
+                <li>Bucuresti</li>
+                <li>Romania</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
