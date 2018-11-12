@@ -19,13 +19,15 @@
     <nav>
         <i class="fas fa-bars desktop-hidden burger" onclick="burgerMenu()"></i>
         <h1 class="logo">Logo</h1>
-        <ul class="mobile-hidden">
-            <li><a href="program.html">Program</a></li>
-            <li><a href="">Filme</a></li>
-            <li><a href="">Spectacole</a></li>
-            <li><a href="">Promotii</a></li>
-            <li><a href="">Evenimente Private</a></li>
-        </ul>
+        <section class="mobile-hidden">
+            <ul>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="">Filme</a></li>
+                <li><a href="">Spectacole</a></li>
+                <li><a href="">Promotii</a></li>
+                <li><a href="">Evenimente Private</a></li>
+            </ul>
+        </section>
     </nav>
 
     <ul class="mobile-menu">
@@ -51,7 +53,7 @@
         <div class="slide" id="slide-1">
             <img src="http://fr.web.img6.acsta.net/pictures/18/05/15/16/26/2028013.jpg" alt="film-img">
             <aside>
-                <h1>Bohemian Rhaspsody</h1>
+                <h1>Bohemian Rhapsody</h1>
                 <button>Vezi Trailer</button>
                 <p class="mobile-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ea repellendus
                     repudiandae porro
@@ -93,49 +95,61 @@
         <hr>
         <section class="movie-list">
             <article class="movie">
-                <img src="https://i.pinimg.com/originals/f1/b7/6b/f1b76bea3e4674119e4f6b28dbf6a6ec.jpg" alt="">
+                <div class="img-container">
+                    <img src="https://i.pinimg.com/originals/f1/b7/6b/f1b76bea3e4674119e4f6b28dbf6a6ec.jpg" alt="">
+                    <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+                    <button>Trailer</button>
+                    <button>Bilete</button>
+                </div>
                 <h2 class="movie-title">Venom</h2>
-                <button>Trailer</button>
-                <button>Bilete</button>
-                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
             </article>
             <article class="movie">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51fkIu-dMBL._SS500.jpg" alt="">
+                <div class="img-container">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51fkIu-dMBL._SS500.jpg" alt="">
+                    <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+                    <button>Trailer</button>
+                    <button>Bilete</button>
+                </div>
                 <h2 class="movie-title">Bohemian Rhapsody</h2>
-                <button>Trailer</button>
-                <button>Bilete</button>
-                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
             </article>
             <article class="movie">
-                <img src="https://www.desktopbackground.org/p/2013/09/05/634107_pirates-of-the-caribbean-on-stranger-tides_500x500_h.jpg"
-                    alt="">
-                <h2 class="movie-title">Piratii din Caraibe</h2>
-                <button>Trailer</button>
-                <button>Bilete</button>
-                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+                <div class="img-container">
+                    <img src="https://www.desktopbackground.org/p/2013/09/05/634107_pirates-of-the-caribbean-on-stranger-tides_500x500_h.jpg"
+                        alt="">
+                    <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+                    <button>Trailer</button>
+                    <button>Bilete</button>
+                </div>
+                <h2 class="movie-title">Bohemian Rhapsody</h2>
             </article>
             <article class="movie">
-                <img src="https://cdn.fanatik.ro/wp-content/uploads/media/421/2661/33415/14518588/1/ha2_lalaland.jpg"
-                    alt="">
-                <h2 class="movie-title">Singur Acasa 2</h2>
-                <button>Trailer</button>
-                <button>Bilete</button>
-                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+                <div class="img-container">
+                    <img src="https://cdn.fanatik.ro/wp-content/uploads/media/421/2661/33415/14518588/1/ha2_lalaland.jpg"
+                        alt="">
+                    <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+                    <button>Trailer</button>
+                    <button>Bilete</button>
+                </div>
+                <h2 class="movie-title">Bohemian Rhapsody</h2>
             </article>
             <article class="movie">
-                <img src="http://photos.prnewswire.com/prn/20120327/LA77015?max=950" alt="">
-                <h2 class="movie-title">Razbunatorii</h2>
-                <button>Trailer</button>
-                <button>Bilete</button>
-                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+                <div class="img-container">
+                    <img src="http://photos.prnewswire.com/prn/20120327/LA77015?max=950" alt="">
+                    <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+                    <button>Trailer</button>
+                    <button>Bilete</button>
+                </div>
+                <h2 class="movie-title">Bohemian Rhapsody</h2>
             </article>
             <article class="movie">
-                <img src="https://images.store.hmv.com/app_/responsive/HMVStore/media/product/296783/01-296783.jpg?w=500"
-                    alt="">
-                <h2 class="movie-title">Deadpool</h2>
-                <button>Trailer</button>
-                <button>Bilete</button>
-                <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+                <div class="img-container">
+                    <img src="https://images.store.hmv.com/app_/responsive/HMVStore/media/product/296783/01-296783.jpg?w=500"
+                        alt="">
+                    <img src="img/smoke-bg.png" class="smoke-bg" alt="">
+                    <button>Trailer</button>
+                    <button>Bilete</button>
+                </div>
+                <h2 class="movie-title">Bohemian Rhapsody</h2>
             </article>
         </section>
         <button>Mai Multe</button>

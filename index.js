@@ -44,5 +44,3 @@ function closeBurgerMenu() {
     document.querySelector('.mobile-menu').style.transform = "translateX(-100vw)";
     document.querySelector('.mobile-menu').style.style = "visibility:1;";
 }
-
-alert(window.innerWidth + " " + window.innerHeight);
