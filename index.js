@@ -37,10 +37,8 @@ function showSlides(index) {
 // Burger Menu trigger
 function burgerMenu() {
     document.querySelector('.mobile-menu').style.transform = "translateX(0)";
-    document.querySelector('.mobile-menu').style.style = "visibility:0;";
 }
 
 function closeBurgerMenu() {
     document.querySelector('.mobile-menu').style.transform = "translateX(-100vw)";
-    document.querySelector('.mobile-menu').style.style = "visibility:1;";
 }

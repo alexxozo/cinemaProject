@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 
 <head>
     <meta charset="utf-8" />
@@ -19,37 +19,43 @@
     <nav>
         <i class="fas fa-bars desktop-hidden burger" onclick="burgerMenu()"></i>
         <h1 class="logo">Logo</h1>
-        <section class="mobile-hidden">
+        <div class="mobile-hidden">
             <ul>
                 <li><a href="program.html">Program</a></li>
-                <li><a href="">Filme</a></li>
+                <li class="dropdown">
+                    <a href="">Filme</a>
+                    <div class="dropdown-content">
+                        <a href="">Filme Noi</a>
+                        <a href="">Filme Vechi</a>
+                    </div>
+                </li>
                 <li><a href="">Spectacole</a></li>
                 <li><a href="">Promotii</a></li>
                 <li><a href="">Evenimente Private</a></li>
             </ul>
-        </section>
+        </div>
     </nav>
 
-    <ul class="mobile-menu">
+    <nav class="mobile-menu">
         <span class="close-button" onclick="closeBurgerMenu()">X</span>
         <a href="program.html">
-            <li>Program</li>
+            Program
         </a>
         <a href="">
-            <li>Filme</li>
+            Filme
         </a>
         <a href="">
-            <li>Spectacole</li>
+            Spectacole
         </a>
         <a href="">
-            <li>Promotii</li>
+            Promotii
         </a>
         <a href="">
-            <li>Evenimente Private</li>
+            Evenimente Private
         </a>
-    </ul>
+    </nav>
 
-    <section class="slider">
+    <div class="slider">
         <div class="slide" id="slide-1">
             <img src="http://fr.web.img6.acsta.net/pictures/18/05/15/16/26/2028013.jpg" alt="film-img">
             <aside>
@@ -88,7 +94,7 @@
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </section>
+    </div>
 
     <section class="movies">
         <h1 class="movie-list-title">Cele mai recente filme</h1>
@@ -120,7 +126,7 @@
                     <button>Trailer</button>
                     <button>Bilete</button>
                 </div>
-                <h2 class="movie-title">Bohemian Rhapsody</h2>
+                <h2 class="movie-title">Piratii din Caraibe</h2>
             </article>
             <article class="movie">
                 <div class="img-container">
@@ -130,7 +136,7 @@
                     <button>Trailer</button>
                     <button>Bilete</button>
                 </div>
-                <h2 class="movie-title">Bohemian Rhapsody</h2>
+                <h2 class="movie-title">Singur Acasa 2</h2>
             </article>
             <article class="movie">
                 <div class="img-container">
@@ -139,7 +145,7 @@
                     <button>Trailer</button>
                     <button>Bilete</button>
                 </div>
-                <h2 class="movie-title">Bohemian Rhapsody</h2>
+                <h2 class="movie-title">Razbunatorii</h2>
             </article>
             <article class="movie">
                 <div class="img-container">
@@ -149,7 +155,7 @@
                     <button>Trailer</button>
                     <button>Bilete</button>
                 </div>
-                <h2 class="movie-title">Bohemian Rhapsody</h2>
+                <h2 class="movie-title">Deadpool</h2>
             </article>
         </section>
         <button>Mai Multe</button>
@@ -184,7 +190,7 @@
             </ul>
         </section>
     </footer>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 
 </html>
