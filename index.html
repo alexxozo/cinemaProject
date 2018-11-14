@@ -16,44 +16,7 @@
 
 <body>
 
-    <nav>
-        <i class="fas fa-bars desktop-hidden burger" onclick="burgerMenu()"></i>
-        <h1 class="logo">Logo</h1>
-        <div class="mobile-hidden">
-            <ul>
-                <li><a href="program.html">Program</a></li>
-                <li class="dropdown">
-                    <a href="">Filme</a>
-                    <div class="dropdown-content">
-                        <a href="">Filme Noi</a>
-                        <a href="">Filme Vechi</a>
-                    </div>
-                </li>
-                <li><a href="">Spectacole</a></li>
-                <li><a href="">Promotii</a></li>
-                <li><a href="">Evenimente Private</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <nav class="mobile-menu">
-        <span class="close-button" onclick="closeBurgerMenu()">X</span>
-        <a href="program.html">
-            Program
-        </a>
-        <a href="">
-            Filme
-        </a>
-        <a href="">
-            Spectacole
-        </a>
-        <a href="">
-            Promotii
-        </a>
-        <a href="">
-            Evenimente Private
-        </a>
-    </nav>
+    <div class="navbar"></div>
 
     <div class="slider">
         <div class="slide" id="slide-1">
@@ -97,7 +60,7 @@
     </div>
 
     <section class="movies">
-        <h1 class="movie-list-title">Cele mai recente filme</h1>
+        <h1 class="list-title">Cele mai recente filme</h1>
         <hr>
         <section class="movie-list">
             <article class="movie">
@@ -161,35 +124,10 @@
         <button>Mai Multe</button>
     </section>
 
-    <footer>
-        <section>
-            <h4>Cinema City</h4>
-            <ul>
-                <li>Privacy policy</li>
-                <li>Terms and Conditions</li>
-                <li>Cookies Policy</li>
-            </ul>
-        </section>
-        <section>
-            <h4>Social Media</h4>
-            <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>MySpace</li>
-                <li>Hi5</li>
-            </ul>
-        </section>
-        <section>
-            <h4>Contact</h4>
-            <ul>
-                <li>+40725903449 - Adrian Eustache</li>
-                <li>Strada Porumbului, nr 42</li>
-                <li>Bucuresti</li>
-                <li>Romania</li>
-            </ul>
-        </section>
-    </footer>
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 
