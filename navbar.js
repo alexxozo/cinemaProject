@@ -1,6 +1,7 @@
+document.write(`
 <nav>
-    <i class="fas fa-bars desktop-hidden burger" onclick="burgerMenu()"></i>
-    <h1 class="logo">Logo</h1>
+    <i class= "fas fa-bars desktop-hidden burger" onclick = "burgerMenu()"></i>
+    <h1 class="logo">CinemaCity</h1>
     <div class="mobile-hidden">
         <ul>
             <li><a href="index.html">Acasa</a></li>
@@ -39,3 +40,4 @@
         Promotii
     </a>
 </nav>
+`);

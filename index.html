@@ -8,15 +8,16 @@
     <meta name="keywords" content="cinema,filme,bucuresti">
     <meta name="description" content="Cinema Bucuresti">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cinema</title>
+    <title>Cinema - Pagina Principala</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
 </head>
 
 <body>
 
-    <div class="navbar"></div>
+    <script src="navbar.js"></script>
 
     <div class="slider">
         <div class="slide" id="slide-1">
@@ -24,9 +25,12 @@
             <aside>
                 <h1>Bohemian Rhapsody</h1>
                 <button>Vezi Trailer</button>
-                <p class="mobile-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ea repellendus
-                    repudiandae porro
-                    maxime illo cupiditate soluta beatae ab deleniti?</p>
+                <p class="mobile-hidden"><b>Bohemian Rhapsody (2018)</b> este o celebrare a legendarei trupe <b>Queen</b>,
+                    a
+                    muzicii
+                    lor și a liderului extraordinar al formației, <b>Freddie Mercury</b>, care a sfidat stereotipurile
+                    și a
+                    distrus convențiile, devenind unul dintre cei mai iubiți artiști de pe planetă.</p>
             </aside>
         </div>
         <div class="slide" id="slide-2">
@@ -34,9 +38,11 @@
             <aside>
                 <h1>Elliot: O poveste de craciun</h1>
                 <button>Vezi Trailer</button>
-                <p class="mobile-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ea repellendus
-                    repudiandae porro
-                    maxime illo cupiditate soluta beatae ab deleniti?</p>
+                <p class="mobile-hidden">Când unul dintre renii lui <b>Moș Crăciun</b> anunță brusc că se pensionează,
+                    e
+                    nevoie urgentă să i se găsească un înlocuitor! Deși e cel mai nepotrivit candidat, Elliot, ajutat
+                    de Hazel, prietena lui cea mai bună, e ferm hotărât să dovedească lumii întregi că el e “renul”
+                    care trebuie să facă parte din echipa Moșului.</p>
             </aside>
         </div>
         <div class="slide" id="slide-3">
@@ -45,9 +51,11 @@
             <aside>
                 <h1>Coboram la prima</h1>
                 <button>Vezi Trailer</button>
-                <p class="mobile-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ea repellendus
-                    repudiandae porro
-                    maxime illo cupiditate soluta beatae ab deleniti?</p>
+                <p class="mobile-hidden">Un metrou se blochează între stații în dimineața de după incendiul din clubul
+                    Colectiv. Fiecare în drumul său, călătorii sunt împreună și incep să interactioneze. Suntem
+                    străini până când ceva ne aduce împreună. Dacă ne deschidem, observăm ca avem ce împărtăși cu cei
+                    din jurul nostru. La finalul călătoriei, la urmatoarea stație, fiecare iese modificat, în felul
+                    său. Suntem unii lângă alții în lume, așa cum suntem și într-un vagon de metrou</p>
             </aside>
         </div>
         <div class="dots">
@@ -62,7 +70,7 @@
     <section class="movies">
         <h1 class="list-title">Cele mai recente filme</h1>
         <hr>
-        <section class="movie-list">
+        <div class="movie-list">
             <article class="movie">
                 <div class="img-container">
                     <img src="https://i.pinimg.com/originals/f1/b7/6b/f1b76bea3e4674119e4f6b28dbf6a6ec.jpg" alt="">
@@ -120,11 +128,11 @@
                 </div>
                 <h2 class="movie-title">Deadpool</h2>
             </article>
-        </section>
+        </div>
         <button>Mai Multe</button>
     </section>
 
-    <footer></footer>
+    <script src="footer.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>

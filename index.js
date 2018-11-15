@@ -1,7 +1,3 @@
-// Navbar and Footer
-$('.navbar').load('navbar.html');
-$('footer').load('footer.html');
-
 // Slider
 var slideIndex = 1;
 

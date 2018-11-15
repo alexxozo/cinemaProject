@@ -8,15 +8,16 @@
     <meta name="keywords" content="cinema,filme,bucuresti">
     <meta name="description" content="Cinema Bucuresti">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cinema</title>
+    <title>Cinema - Program</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
 </head>
 
 <body>
 
-    <div class="navbar"></div>
+    <script src="navbar.js"></script>
 
     <section class="program">
         <h1 class="list-title">Programul filmelor si al spectacolelor</h1>
@@ -33,15 +34,16 @@
             </ul>
         </div>
         <div class="tab-content">
-            <section class="movies">
+            <div class="movies">
                 <h1 class="list-title">Filmele de Luni</h1>
                 <hr>
-                <section class="movie-list">
+                <div class="movie-list">
                     <article class="movie movie-program">
                         <div class="img-container">
                             <img src="https://i.pinimg.com/originals/f1/b7/6b/f1b76bea3e4674119e4f6b28dbf6a6ec.jpg" alt="">
                             <img src="img/smoke-bg.png" class="smoke-bg" alt="">
-                            <button>Bilete</button>
+                            <!-- Se va schimba cand fac JS -->
+                            <button onclick="location.href = 'film.html';">Bilete</button>
                             <div class="ore">
                                 <ul>
                                     <li>10:30</li>
@@ -57,46 +59,46 @@
                     </article>
                     <article class="movie movie-program">
                         <div class="img-container">
-                            <img src="https://i.pinimg.com/originals/f1/b7/6b/f1b76bea3e4674119e4f6b28dbf6a6ec.jpg" alt="">
+                            <img src="http://www.femalefirst.co.uk/image-library/square/500/c/captain-america-civil-war-group-poster.jpg"
+                                alt="">
                             <img src="img/smoke-bg.png" class="smoke-bg" alt="">
-                            <button>Bilete</button>
+                            <!-- Se va schimba cand fac JS -->
+                            <button onclick="location.href = 'film.html';">Bilete</button>
                             <div class="ore">
                                 <ul>
                                     <li>10:30</li>
                                     <li>12:30</li>
                                     <li>13:30</li>
                                     <li>14:30</li>
-                                    <li>21:30</li>
-                                    <li>21:30</li>
                                 </ul>
                             </div>
                         </div>
-                        <h2 class="movie-title">Venom</h2>
+                        <h2 class="movie-title">Civil War</h2>
                     </article>
                     <article class="movie movie-program">
                         <div class="img-container">
-                            <img src="https://i.pinimg.com/originals/f1/b7/6b/f1b76bea3e4674119e4f6b28dbf6a6ec.jpg" alt="">
+                            <img src="https://www.dvdplanetstore.pk/wp-content/uploads/2015/08/The-Amazing-Spider-Man-2012dvdplanetstorepk.jpeg"
+                                alt="">
                             <img src="img/smoke-bg.png" class="smoke-bg" alt="">
-                            <button>Bilete</button>
+                            <!-- Se va schimba cand fac JS -->
+                            <button onclick="location.href = 'film.html';">Bilete</button>
                             <div class="ore">
                                 <ul>
                                     <li>10:30</li>
                                     <li>12:30</li>
-                                    <li>13:30</li>
-                                    <li>14:30</li>
                                     <li>21:30</li>
                                     <li>21:30</li>
                                 </ul>
                             </div>
                         </div>
-                        <h2 class="movie-title">Venom</h2>
+                        <h2 class="movie-title">Fantasticul Spiderman</h2>
                     </article>
-                </section>
-            </section>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer></footer>
+    <script src="footer.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
