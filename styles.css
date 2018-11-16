@@ -53,6 +53,42 @@ nav ul a:hover {
     color: #9c94a9;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60%;
+    background: #6441a5;
+    padding-top: 30px;
+    min-width: 160px;
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-bottom: 1px white solid;
+}
+
+.dropdown-content a:first-of-type {
+    border-top: 1px white solid;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #ddd;
+}
+
 /* Burger Menu */
 
 .burger {
@@ -75,11 +111,11 @@ nav ul a:hover {
     padding: 0;
 }
 
-.mobile-menu a:first-of-type {
+.mobile-menu li:first-of-type {
     border-top: white 1px solid;
 }
 
-.mobile-menu a {
+.mobile-menu li {
     padding: 20px;
     border-bottom: #ffffff 1px solid;
     text-decoration: none !important;
@@ -639,6 +675,8 @@ button:hover {
     }
 }
 
+/* Tablet */
+
 @media (min-width:768px) {
     * {
         font-size: 16px;
@@ -707,6 +745,8 @@ button:hover {
     }
 }
 
+/* Desktop */
+
 @media (min-width:1100px) {
     /* hi-res laptops and desktops */
     * {
@@ -721,31 +761,9 @@ button:hover {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
     }
-    .dropdown {
-        position: relative;
-    }
     .dropdown-content {
-        display: none;
-        position: absolute;
-        top: 80%;
-        left: 20%;
-        background: #6441a5;
-        padding-top: 30px;
-        min-width: 160px;
-        z-index: 1;
-    }
-    .dropdown-content a {
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-    }
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    .dropdown-content a:hover {
-        color: #ddd;
+        top: 1.6rem !important;
+        padding-top: 1rem;
     }
     /* Slider */
     .slide {

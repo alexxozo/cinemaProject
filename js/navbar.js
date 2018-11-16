@@ -21,23 +21,18 @@ document.write(`
 
 <nav class="mobile-menu">
     <span class="close-button" onclick="closeBurgerMenu()">X</span>
-    <a href="index.html">
-        Acasa
-    </a>
-    <a href="program.html">
-        Program
-    </a>
-    <a href="filme-noi.html">
-        Filme Noi
-    </a>
-    <a href="filme-vechi.html">
-        Filme Vechi
-    </a>
-    <a href="spectacole.html">
-        Spectacole
-    </a>
-    <a href="promotii.html">
-        Promotii
-    </a>
+    <ul>
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li class="dropdown">
+            <a>Filme</a>
+            <div class="dropdown-content">
+                <a href="filme-noi.html">Filme Noi</a>
+                <a href="filme-vechi.html">Filme Vechi</a>
+            </div>
+        </li>
+        <li><a href="spectacole.html">Spectacole</a></li>
+        <li><a href="promotii.html">Promotii</a></li>
+    </ul>
 </nav>
 `);
