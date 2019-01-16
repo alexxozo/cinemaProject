@@ -1,0 +1,33 @@
+.seat-map {
+    overflow: scroll;
+}
+
+table {
+    overflow: scroll;
+    width: 100vw;
+    background: white;
+    /* border: 2px solid black; */
+    padding: 20px;
+}
+
+td {
+    padding: 3%;
+    border: 1px solid black;
+    color: black;
+}
+
+td.none {
+    visibility: hidden;
+}
+
+td.taken {
+    background: tomato;
+}
+
+td.free {
+    background: greenyellow;
+}
+
+td.selected {
+    background: blue;
+}

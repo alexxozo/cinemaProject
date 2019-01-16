@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Cabin";
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Navbar */
@@ -106,7 +107,7 @@ nav ul a:hover {
     background: #6441a5;
     height: 100vh;
     width: 100vw;
-    transition: 1s ease-in-out transform;
+    transition: .3s ease-in-out transform;
     transform: translateX(-100vw);
     padding: 0;
 }
@@ -323,7 +324,7 @@ hr {
     bottom: 0px;
     font-size: 1rem;
     padding: 5px 10px;
-    transition: 1s all;
+    transition: .5s all;
     opacity: 0;
 }
 
@@ -555,7 +556,7 @@ span.red {
     border-radius: 10px 10px;
     font-size: 1rem;
     padding: 5px 10px;
-    transition: .2 all;
+    transition: 0.2s ease all;
 }
 
 .movie2 button:hover {
@@ -654,6 +655,128 @@ span.red {
     text-align: center;
 }
 
+.schedule-chooser {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background: #6441a5;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 1rem 2rem;
+}
+
+.schedule-chooser a {
+    text-transform: none !important;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.day-name {
+    font-size: 1.5rem;
+}
+
+.days li {
+    flex: 1 0 auto;
+    text-align: center;
+    padding: 1rem;
+    background: #a3a3a352;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.days li:hover {
+    background: #6441a5;
+}
+
+.days li.active {
+    background: #6441a5;
+}
+
+.days date {
+    display: block;
+}
+
+.hours {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hours li {
+    flex: 1 1 auto;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/* Seat booking */
+
+.seat-booking {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    background: url('img/stars-bg.jpg');
+    color: white;
+}
+
+.movie-description {
+    margin-bottom: 20px;
+}
+
+.movie-description h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.seats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.movie-options {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 0.5rem;
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.movie-options h3 {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* Ticket Type */
+
+.ticket-type {
+    display: flex;
+    justify-content: space-around;
+}
+
+.option input {
+    margin-left: 10px;
+}
+
+/* Timer */
+
+#timer {
+    font-size: 2rem;
+}
+
+#hourSelected {
+    font-size: 1.4rem;
+}
+
+/* Bilete.html */
+
+select {
+    padding: 5px;
+}
+
 button:hover {
     background: #330a55;
 }
@@ -733,7 +856,7 @@ button:hover {
     }
     /* Movie Description */
     .movie-description {
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
         align-items: center;
     }
     .movie-description img {
@@ -831,5 +954,12 @@ button:hover {
     /* Movie Page */
     .movie-description img {
         max-height: 700px;
+    }
+    .schedule-chooser {
+        max-width: 80%;
+        margin: 5rem auto;
+    }
+    .hours {
+        min-height: 10rem;
     }
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seat Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <style>
+        table {
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        td {
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        td.none {
+            visibility: hidden;
+        }
+
+        td.taken {
+            background: tomato;
+        }
+
+        td.free {
+            background: greenyellow;
+        }
+
+        td.selected {
+            background: blue;
+        }
+    </style>
+
+    <table>
+        <tbody id="map-holder">
+        </tbody>
+    </table>
+
+    <script>
+        // -1 - nonexistant
+        // 0 - not taken
+        // 1 - taken
+        let seatMatrix = [
+            [-1, 0, 0, 0, 1, 1, 1, 0, 0, -1],
+            [-1, 1, 1, 1, 1, 1, 1, 1, 1, -1],
+            [-1, -1, 1, 1, 1, 1, 1, 1, -1, -1],
+            [-1, 0, 0, 1, 1, 1, 1, 0, 0, -1],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ];
+        let rows = 5, cols = 10;
+        let mapElement = document.getElementById('map-holder');
+        let selectedSeats = 0;
+        let rowLetter = 'A', colNumber = 1;
+
+        function nextChar(c) {
+            return String.fromCharCode(c.charCodeAt(0) + 1);
+        }
+
+        for (let i = -1; i < rows; i++) {
+            let tr = document.createElement('tr');
+            for (let j = -1; j < cols; j++) {
+                let td = document.createElement('td');
+                if (i == -1 && j == -1) {
+                    // do nothing
+                    td.classList.add('label');
+                } else if (i == -1) {
+                    td.classList.add('label');
+                    td.appendChild(document.createTextNode(colNumber++));
+                } else if (j == -1) {
+                    td.classList.add('label');
+                    td.appendChild(document.createTextNode(rowLetter));
+                    rowLetter = nextChar(rowLetter);
+                } else if (seatMatrix[i][j] == -1) {
+                    td.classList.add('none');
+                } else if (seatMatrix[i][j] == 0) {
+                    td.classList.add('free');
+                } else if (seatMatrix[i][j] == 1) {
+                    td.classList.add('taken');
+                }
+                tr.appendChild(td);
+            }
+            mapElement.appendChild(tr);
+        }
+
+        // On Click
+        let tdElements = document.querySelectorAll('td');
+
+        tdElements.forEach((e) => {
+            e.addEventListener('click', () => {
+                if (e.classList.contains('free')) {
+                    selectedSeats++;
+                    e.classList.replace('free', 'selected');
+                } else if (e.classList.contains('selected')) {
+                    selectedSeats--;
+                    e.classList.replace('selected', 'free');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Home Alone",
+        "schedule": [
+            "10:30 Sala Ultra",
+            "12:30 Sala Standard",
+            "11:45 Sala de mese"
+        ],
+        "ticketsAvailable": 20,
+        "ticketsTaken": 10
+    },
+    {
+        "title": "Avengers",
+        "schedule": [
+            "01:30 Sala Ultra",
+            "02:30 Sala Standard",
+            "11:25 Sala de mese"
+        ],
+        "ticketsAvailable": 20,
+        "ticketsTaken": 25
+    },
+    {
+        "title": "Piratii din Caraibe",
+        "schedule": [
+            "03:30 Sala Ultra",
+            "17:30 Sala Standard",
+            "19:45 Sala de mese"
+        ],
+        "ticketsAvailable": 20,
+        "ticketsTaken": 28
+    },
+    {
+        "title": "Lala",
+        "schedule": [
+            "10:50 Sala Ultra",
+            "16:30 Sala Standard",
+            "19:45 Sala de mese"
+        ],
+        "ticketsAvailable": 2,
+        "ticketsTaken": 27
+    }
+]

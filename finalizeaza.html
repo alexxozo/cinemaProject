@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Finalizare Comanda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        window.onload = function () {
+            let data = location.search.slice(1).split('&');
+            data.forEach((pair) => {
+                pair = pair.split('=');
+                pair[1] = pair[1].split('+').join(' ');
+                if (pair[0] == 'hourSelect') {
+                    pair[1] = pair[1].split('%3A').join(':');
+                }
+                console.log(pair);
+                if (pair[1] != '' && pair[1] != 'on') {
+                    let listElement = document.createElement('h3');
+                    let type = '';
+                    if (pair[0] == 'hourSelect') {
+                        type = "Ora Selectata: ";
+                    } else if (pair[0] == 'movieSelect') {
+                        type = "Filmul Selectat: ";
+                    } else if (pair[0] == 'ticketsNumber') {
+                        type = "Nr de bilete: ";
+                    } else if (pair[0] == 'nume') {
+                        type = "Nume: ";
+                    } else if (pair[0] == 'speciale') {
+                        type = "Cerinte speciale: ";
+                        pair[1] = pair[1].split('%20').join(' ');
+                    }
+                    //listElement.style.marginTop = "15px";
+                    listElement.appendChild(document.createTextNode(type + pair[1]));
+                    document.querySelector('#comanda').appendChild(listElement);
+                }
+            });
+            let button = document.createElement('input');
+            button.type = 'submit';
+            button.value = 'Datele sunt corecte!';
+
+            document.querySelector('#comanda').appendChild(button);
+
+            let comanda = document.querySelector('#comanda');
+            for (let i = 0; i < comanda.children.length; i++) {
+                comanda.children[i].style.marginTop = '15px';
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Cabin";
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        #comanda {
+            width: 50vw;
+            /* height: 80vh; */
+            color: white;
+            margin: 100px auto;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            background: url('img/stars-bg.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <form id="comanda" action='/index.html'>
+        <h1>Finalizare comanda</h1>
+        <hr>
+    </form>
+</body>
+
+</html>

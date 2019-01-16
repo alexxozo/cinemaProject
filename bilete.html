@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<!-- textarea -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Alex Simion">
+    <meta name="keywords" content="cinema,filme,bucuresti">
+    <meta name="description" content="Cinema Bucuresti">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinema - Film</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link rel="stylesheet" href="map.css">
+</head>
+
+<body>
+
+    <script src="js/navbar.js"></script>
+
+    <section class="seat-booking">
+        <h1 class="list-title">Rezerva bilete la film!</h1>
+        <hr>
+        <form action="/finalizeaza.html" method='get'>
+            <section class="movie-description">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <h1>Cronometrul sesiunii:</h1>
+                    <span id="timer">10:00</span>
+                </div>
+                <img src="img/scary-movie.jpg" alt="imagine-movie">
+                <h1 id="movie-title"></h1>
+                <h2>Ora selectata: <span id="hourSelected"></span></h2>
+            </section>
+            <section class="movie-options">
+                <h3>Schimba ora:</h3>
+                <select name="hourSelect" id="hourSelect" onchange="changeHour()"></select>
+
+                <h3>Schimba filmul</h3>
+                <select name="movieSelect" onchange="updateMovieData(this.value)" id="movieSelect"></select>
+
+                <div class="seats">
+                    <h4>Locuri libere: <span id="ticketsAvailable"></span></h4>
+                    <h4>Locuri ocupate: <span id="ticketsTaken"></span></h4>
+                </div>
+                <h3>Cate bilete vrei?</h3>
+                <input name="ticketsNumber" id="ticketsRange" type="range" min="0" value="0" step="1" onchange="showVal(this.value)">
+                <h4 style="text-align: center;"> <span id="tickets"></span> Bilete</h4>
+
+                <h3>Harta Sala</h3>
+                <div class="seat-map" style="padding: 10px;">
+                    <table>
+                        <tbody id="map-holder">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="3d">
+                    <h3>Ochelari 3D?</h3>
+                    <label>Ochelari 3D pentru toata lumea</label>
+                    <br>
+                    <input name="glasses" type="checkbox" onchange="toggleSelect()">
+                    Da</br>
+                    <label>Ochelari 3D pentru</label>
+                    <select id="glassesSelect">
+                    </select>
+                    persoane
+                </div>
+
+                <h3>Tip bilet</h3>
+
+                <div class="ticket-type">
+                    <div class="option">Student<input type="radio" name="ticket" value="Student"></div>
+                    <div class="option">Copil<input type="radio" name="ticket" value="Copil"></div>
+                    <div class="option">Adult<input type="radio" name="ticket" value="Adult"></div>
+                </div>
+
+                Numele pe care se face rezervarea<input name="nume" type="text">
+                Ai cerinte speciale cu care te putem ajuta?<textarea name="speciale" id="" cols="30" rows="10"></textarea>
+                <input name="speciale" type="textarea">
+                Vrei sa castigi popcorn gratis?
+                <button onclick="location.href='popcorn.html';">Spre joc!</button>
+                <input type="submit" value="Finalizeaza">
+            </section>
+        </form>
+    </section>
+
+
+    <script src="js/footer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/seat-booking.js"></script>
+</body>
+
+</html>
